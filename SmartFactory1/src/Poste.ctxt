@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Poste
+comment0.text=\n\ La\ classe\ poste\ permet\ de\ cr\u00E9er\ tous\ les\ postes\ de\ la\ smart\ factory\ \:\ aussi\ bien\ les\ machines\ que\ les\ postes\ manuels.\n
+comment1.params=nom\ temps\ ref
+comment1.target=Poste(java.lang.String,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

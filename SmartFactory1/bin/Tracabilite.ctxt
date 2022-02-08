@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Tracabilite
+comment0.text=\n\ @author\ E.\ TALHI/\ A.\ LOA\u00CBC\n\ 15\ oct.\ 2021\n
+comment1.params=
+comment1.target=Tracabilite()
+comment1.text=\n\ La\ creation\ d'un\ objet\ de\ type\ Tracabilite\ "vide"\ n'a\ qu'un\ seul\ but\ c'est\ de\ vous\ permettre\ d'executer\ la\ methode\ calculerHeureFin()\n\ pour\ comprendre\ son\ fonctionnement.\n
+comment2.params=duree
+comment2.target=void\ calculerHeureFin(int)
+comment2.text=\n\ La\ methode\ calculerHeureFin\ prend\ comme\ parametre\ la\ duree\ en\ minutes\ (int),\ recupere\ l'instant\ present\ via\ Calendar.getInstance()\ auquel\ elle\ ajoute\n\ la\ duree\ (exrimee\ en\ minute)\ apres\ l'avoir\ convertie\ en\ milisecondes\ et\ affiche\ l'heure\ de\ fin.\n
+comment3.params=
+comment3.target=void\ listerUsinage()
+numComments=4

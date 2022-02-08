@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Atelier
+comment0.text=\n\ La\ classe\ Atelier\ permet\ de\ repr\u00E9senter\ un\ atelier\ via\ un\ ensemble\ d'informations.\ \n\ Parmi\ ces\ informations\ figure\ une\ liste\ d'espaces.\ Cette\ liste\ contiendra\ les\ epsaces\ suivants\ \:\n\ M\u00E9trologie,\ Productique,\ Technologie\ des\ m\u00E9canismes\n
+comment1.params=nom
+comment1.target=Atelier(java.lang.String)
+comment2.params=a
+comment2.target=void\ addEspace(Espace)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=
+comment4.target=void\ printAtelier()
+numComments=5

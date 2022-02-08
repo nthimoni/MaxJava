@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Produit
+comment0.text=\n\ La\ classe\ produit\ permet\ de\ repr\u00E9senter\ le\ produit\ final.\ Le\ produit\ final\ est\ compos\u00E9\ de\ plusieurs\ pi\u00E8ces\n
+comment1.params=
+comment1.target=void\ piecesProduit()
+numComments=2

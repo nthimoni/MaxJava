@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Brut
+comment0.text=\n\ @author\ E.\ TALHI/\ A.\ LOA\u00CBC\n\ 29\ sept.\ 2021\n
+comment1.params=nomBrut\ forme\ Longueur\ largeur\ hauteur
+comment1.target=Brut(java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+numComments=2

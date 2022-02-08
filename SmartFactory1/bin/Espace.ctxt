@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Espace
+comment0.text=\n\ La\ classe\ espace\ permet\ la\ cr\u00E9ation\ d'objets\ espaces.\ Ces\ objets\ serviront\ \u00E0\ remplir\ \n\ la\ liste\ "espaces"\ dans\ la\ classe\ Atelier\n
+comment1.params=nom
+comment1.target=Espace(java.lang.String)
+comment2.params=poste
+comment2.target=void\ addPoste(Poste)
+comment3.params=
+comment3.target=void\ printPostes()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
