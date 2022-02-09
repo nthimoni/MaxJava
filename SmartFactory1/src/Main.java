@@ -1,41 +1,40 @@
-package src;
+//package src;
 
 import java.io.Console;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.swing.text.PlainDocument;
+
 /**
  * @author E. TALHI/ A .LOAËC
- * 17 oct. 2021
+ *         17 oct. 2021
  */
 public class Main {
 
-
-	
 	/**
 	 * @param args
 	 */
-	
+
 	public static void main(String[] args) {
 		// Creation de l'atelier
 		Atelier atelier = new Atelier("Principal");
-		
+
 		// Creation des espaces
 		Espace metrologie = new Espace("Metrologie");
 		Espace productique = new Espace("Productique");
 		Espace tech = new Espace("Technologie des mecanismes");
-		
+
 		// Ajout des espaces
 		atelier.addEspace(metrologie);
 		atelier.addEspace(productique);
 		atelier.addEspace(tech);
-		
+
 		// Creation des postes de metrologie
 		Poste brasMetro = new Poste("bras metrologie", "EIGSI_P");
 		Poste imp3D = new Poste("impression 3D filaire PLA", "EIGSI_P");
 		Poste controleDiam = new Poste("controle diametre", "EIGSI_P");
-		
+
 		// Creation des postes dans technologie des mecanismes
 		Poste magasinFini = new Poste("MAGASIN Produit fini", "EIGSI_P");
 
@@ -73,7 +72,6 @@ public class Main {
 		productique.addPoste(FraiseuseCN2);
 		productique.addPoste(tourConvOpti);
 
-
 		int choix = 0;
 		ChaineProd chaine = new ChaineProd();
 		ArrayList<Integer> tempsJet = new ArrayList<>();
@@ -84,12 +82,12 @@ public class Main {
 		tempsFraiseuse.add(4);
 		tempsFraiseuse.add(1);
 		tempsFraiseuse.add(4);
-	
+
 		chaine.addPoste(jetdeau, 1, tempsJet);
 		chaine.addPoste(FraiseuseCN1, 5, tempsFraiseuse);
 		Brut plaque = new Brut("Plaque", "Parallelepipede", 200, 200, 20, chaine);
-		do{
-			//Introduction & choix d'action
+		do {
+			// Introduction & choix d'action
 			System.out.println("Bonjour, bienvenue dans l'interface de contrôle EIGSI.");
 			System.out.println(" ");
 			System.out.println("Que souhaitez vous faire ?");
@@ -99,52 +97,44 @@ public class Main {
 			System.out.println("3- Quitter");
 			System.out.println(" ");
 
-
 			Scanner console = new Scanner(System.in);
 
+			do {
+				System.out.println("Veuillez entrer votre choix :");
+				choix = console.nextInt();
+			} while (choix < 1 || choix > 3);
 
-
-			do{
-	   			System.out.println("Veuillez entrer votre choix :");
-	  			choix=console.nextInt();
-			} while (choix<1 || choix>3);
-			
-
-			
-			//Choix 1 ==> Affichage Atelier
-			if(choix ==1){
+			// Choix 1 ==> Affichage Atelier
+			if (choix == 1) {
 
 				// Affichage des informations
 				System.out.println(atelier.toString());
 				atelier.printAtelier();
 			}
-			
-			
-			/*Choix 2 ==> Afficher Usinage avec Tracabilite
-			* Test de la méthode calculerHeureFin(int) dans la classe Tracabilite
-			*/
-			if(choix==2){
-			
+
+			/*
+			 * Choix 2 ==> Afficher Usinage avec Tracabilite
+			 * Test de la méthode calculerHeureFin(int) dans la classe Tracabilite
+			 */
+			if (choix == 2) {
+
 				boolean usinage;
 
 				System.out.println("Voulez vous lancer l'usinage ?");
 				usinage = console.nextBoolean();
-				if(usinage=true){
-
+				if (usinage == true) {
 					Tracabilite tra = new Tracabilite();
-					for (int i = 0; i < plaque.getChaine().size(); i++)
-					{
+					for (int i = 0; i < plaque.getChaine().size(); i++) {
 						Poste current = plaque.getChaine().get(i);
-						for (int u = 0; u < plaque.getChaine().ite(i); u++)
-						{
+						for (int u = 0; u < plaque.getChaine().ite(i); u++) {
 							System.out.println(current.toString());
 							current.usiner(plaque, tra, plaque.getChaine().getTemps(i, u));
 						}
-					}	
+					}
 				}
 			}
-		
-			//Choix de fin de programme ou pas.
+			console.close();
+			// Choix de fin de programme ou pas.
 		} while (choix != 3);
 	}
 
